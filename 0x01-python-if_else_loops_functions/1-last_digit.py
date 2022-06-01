@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
-l_digit = int((str(number))[(len(str(number))) - 1])
+l_digit = str(number)[(len(str(number))) - 1]
 p = "Last digit of"
-l_p = "and is less than 6 and is not 0"
+l_p = "and is less than 6 and not 0"
 if l_digit == 0:
     print(f"Last digit of {number:d} is {l_digit:d} and is 0")
 elif number < 0:
