@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
-l_digit = str(number)[(len(str(number))) - 1]
+l_digit = int(str(number)[(len(str(number))) - 1])
 p = "Last digit of"
 l_p = "and is less than 6 and not 0"
 if l_digit == 0:
