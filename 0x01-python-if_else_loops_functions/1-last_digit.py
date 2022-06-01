@@ -8,8 +8,8 @@ l_p = "and is less than 6 and not 0"
 if l_digit == 0:
     print("Last digit of {:d} is {:d} and is 0".format(number, l_digit))
 elif number < 0:
-    print("{} {:d} is {l_digit * -1:d} {l_p}".format(p, number))
+    print("{} {:d} is {:d} {}".format(p, number, l_digit * -1, l_p))
 elif number > 0 and l_digit > 5:
-    print("{} {:d} is {l_digit:d} and is greater than 5".format(p, number))
+    print("{} {:d} is {:d} and is greater than 5".format(p, number, l_digit))
 else:
-    print("{p} {:d} is {l_digit:d} {l_pp}".format(number))
+    print("{p} {:d} is {:d} {}".format(p, number, l_digit, l_pp))
