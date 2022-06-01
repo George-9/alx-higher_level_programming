@@ -2,5 +2,8 @@
 def uppercase(str):
     a = ""
     for letter in str:
-        a += chr(ord(letter) - 32)
+        if letter != ' ' and (ord(letter) - 32) >= 65:
+            a += (chr(ord(letter) - 32))
+        else:
+            a += (chr(ord(letter)))
     print("{}".format(a))
