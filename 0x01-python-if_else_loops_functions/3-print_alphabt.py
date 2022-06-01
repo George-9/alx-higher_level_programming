@@ -3,4 +3,4 @@ for i in range(97, 123):
     char = chr(i)
     if char == 'e' or char == 'q':
         continue
-    print(char, end="")
+    print("{}".format(char), end="")
