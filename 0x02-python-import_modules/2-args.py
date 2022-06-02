@@ -4,6 +4,9 @@ if __name__ == '__main__':
     n = 1
     if len(argv) == 1:
         print('0 arguments.')
+    if len(argv) == 2:
+        print('1 arguments:')
+        print('{:d} {}'.format(1, argv[1]))
     if len(argv) > 1:
         print('{:d} arguments:'.format(len(argv) - 1))
         for arg in argv:
