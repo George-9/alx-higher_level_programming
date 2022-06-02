@@ -5,5 +5,5 @@ if __name__ == '__main__':
     for num in argv:
         if count > 0:
             sum += int(num)
-        count += 1        
+        count += 1
     print('{:d}'.format(sum))
