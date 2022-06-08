@@ -4,6 +4,8 @@ def mul(arr):
     for a in arr:
         nums.append(a * a)
     return nums
+
+
 def square_matrix_simple(matrix=[]):
     container, arr = [], []
     arr = map(mul, matrix)
