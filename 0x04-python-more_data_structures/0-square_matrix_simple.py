@@ -9,5 +9,4 @@ def mul(arr):
 def square_matrix_simple(matrix=[]):
     container, arr = [], []
     arr = map(mul, matrix)
-    container.append(list(arr))
-    return container
+    return list(arr)
