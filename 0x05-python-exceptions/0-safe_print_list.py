@@ -11,12 +11,10 @@ def safe_print_list(my_list=[], x=0):
         print(my_list[x-1], end="\n")
         return x
     except(IndexError):
-        count = 0
-        for val in my_list:
-            count += 1
-            print(val, end="")
-            if my_list[count] == my_list[-1]:
-                break
-        count += 1
+        count, counter = 0, 0
+        for elem in my_list:
+            counter += 1
+        for val in range(counter - 1):
+            print(my_list[val], end="")
         print(my_list[-1], end="\n")
-        return count
+        return counter
