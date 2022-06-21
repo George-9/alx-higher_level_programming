@@ -5,7 +5,7 @@ def safe_print_list(my_list=[], x=0):
         for elem in my_list:
             counter += 1
         for val in my_list:
-            print(num, end="")
+            print(val, end="")
             nums_p += 1
         print()
         return nums_p
