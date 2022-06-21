@@ -23,3 +23,11 @@ def safe_print_list(my_list=[], x=0):
             print(my_list[val], end="")
         print(my_list[-1], end="\n")
         return counter
+    except TypeError:
+        count, counter = 0, 0
+        for elem in my_list:
+            counter += 1
+        for val in range(counter - 1):
+            print(my_list[val], end="")
+        print(my_list[-1], end="\n")
+        return counter
