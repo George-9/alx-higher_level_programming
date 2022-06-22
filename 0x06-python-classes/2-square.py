@@ -12,9 +12,8 @@ class Square:
     __size = 0
 
     def __init__(self, _Square__size=0):
-        if type(self._Square__size) is not int:
-            raise TypeError("size must be an integer")
-        if self._Square__size < 0:
-            raise ValueError("size must be >= 0")
         Square.__size = self._Square__size = _Square__size
-
+        if type(_Square__size) is not int:
+            raise TypeError("size must be an integer")
+        if _Square__size < 0:
+            raise ValueError("size must be >= 0")
