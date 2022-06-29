@@ -1,3 +1,3 @@
-#!/usr/bin/p
+#!/usr/bin/
 def copy_list(list):
     return list[:]
