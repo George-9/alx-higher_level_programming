@@ -10,17 +10,13 @@ class Square:
             __size (str): private attribute
     """
     def __init__(self, _Square__size=0):
-        if ((type(_Square__size)) is not int):
-            raise TypeError("size must be an integer")
-
-        if (_Square__size < 0):
-            raise ValueError("size must be >= 0")
         self.size = _Square__size
 
     def area(self):
         if ((type(self.size)) is not int):
             raise TypeError("size must be an integer")
-        return self.size * self.size
 
-        if (int(self.size) < 0):
+        if (self.size < 0):
             raise ValueError("size must be >= 0")
+
+        return self.size * self.size
