@@ -24,4 +24,3 @@ class Square:
 
         if (int(self.size) < 0):
             raise ValueError("size must be >= 0")
-
