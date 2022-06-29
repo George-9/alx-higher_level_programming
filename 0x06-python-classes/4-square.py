@@ -9,7 +9,7 @@ class Square:
         Attributes:
             __size (str): private attribute
     """
-    def __init__(self, _Square__size=0):
+    def __init__(self, _Square__size=0, size=0):
         self.size = _Square__size
 
     def area(self):
