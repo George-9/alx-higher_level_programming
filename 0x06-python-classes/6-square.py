@@ -11,7 +11,7 @@ class Square:
     """
     def __init__(self, _Square__size=0, position=0):
         self.size = _Square__size
-        self.__position = position
+        self.position = position
 
     def area(self):
         if ((type(self.size)) is not int):
@@ -38,10 +38,10 @@ class Square:
 
     @property
     def position(self):
-        return self.__position
+        return self.position
 
     @position.setter
     def position(self, value):
         if (type(self.__position) is not tuple):
             raise TypeError("position must be a tuple of 2 positive integers")
-        self.__position = value
+        self.position = value
