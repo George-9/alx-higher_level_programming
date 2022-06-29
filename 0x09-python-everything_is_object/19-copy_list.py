@@ -5,8 +5,8 @@
 """
 
 
-def copy_list(l):
+def copy_list(l=[]):
     """
     """
-    l_copy = l
+    l_copy = l[:]
     return l_copy
