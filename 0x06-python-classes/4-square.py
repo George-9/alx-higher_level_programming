@@ -10,7 +10,7 @@ class Square:
             __size (str): private attribute
     """
     def __init__(self, _Square__size=0, size=0):
-        self.size = _Square__size = size
+        size = self.size = _Square__size
 
     def area(self):
         if ((type(self.size)) is not int):
