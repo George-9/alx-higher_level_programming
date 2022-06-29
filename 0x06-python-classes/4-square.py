@@ -9,8 +9,6 @@ class Square:
         Attributes:
             __size (str): private attribute
     """
-
-
     def __init__(self, _Square__size=0):
         if ((type(_Square__size)) is not int):
             raise TypeError("size must be an integer")
@@ -22,4 +20,3 @@ class Square:
         if ((type(self.size)) is not int):
             raise TypeError("size must be an integer")
         return self.size * self.size
-
