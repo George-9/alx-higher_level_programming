@@ -45,6 +45,8 @@ class Rectangle:
         return (self._Rectangle__width * 2) + (self._Rectangle__height * 2)
 
     def __str__(self):
+        if self._Rectangle__width == 0 or self._Rectangle__height == 0:
+            return ''
         rect = ''
         cont = ''
         for i in range(self._Rectangle__height):
