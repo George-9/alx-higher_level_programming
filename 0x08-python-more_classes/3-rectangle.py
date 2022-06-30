@@ -49,7 +49,8 @@ class Rectangle:
         cont = ''
         for i in range(self._Rectangle__height):
             rect += ("#" * self._Rectangle__width)
-            rect += '\n'
+            rect+='\n'
         for a in range(len(rect) - 1):
             cont += rect[a]
         return cont
+ 
