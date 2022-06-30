@@ -7,7 +7,6 @@
 class Rectangle:
     """
         Attributes:
-            
     """
     def __init__(self, width=0, height=0):
         self._Rectangle__height = height
