@@ -53,4 +53,3 @@ class Rectangle:
         for a in range(len(rect) - 1):
             cont += rect[a]
         return cont
- 
