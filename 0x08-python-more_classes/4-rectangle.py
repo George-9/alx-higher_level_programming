@@ -57,4 +57,5 @@ class Rectangle:
         return cont
 
     def __repr__(self):
-        return f'Rectangle({self._Rectangle__width}, {self._Rectangle__height})'
+        w, h = self._Rectangle__width, self._Rectangle__height
+        return f'Rectangle({w}, {h})'
