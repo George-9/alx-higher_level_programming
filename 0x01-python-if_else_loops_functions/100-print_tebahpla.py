@@ -1,11 +1,14 @@
 #!/usr/bin/python3
+"""
+    print alphabets in reverse interchanging case
+"""
 
-a = ''
+start, a, loop = 0, 0,122
 
-for i in range(97, 123):
-    if i % 2 != 0:
-        a += chr(i).upper()
+while loop >= 97:
+    if loop % 2 == 0:
+        a, start = 0, 0
     else:
-        a += chr(i)
-
-print(a[::-1])
+        start, a = 32, 64
+    print(chr(((loop + start) - a)), end="")
+    loop -= 1
