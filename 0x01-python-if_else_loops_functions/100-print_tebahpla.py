@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 
-i = 122
+a = ''
 
-while(i >= ord('a')):
+for i in range(97, 123):
     if i % 2 != 0:
-        print(chr(i).upper(), end="")
+        a += chr(i).upper()
     else:
-        print(chr(i), end="")
-    i -= 1
+        a += chr(i)
+
+print(a[::-1])
