@@ -10,5 +10,5 @@ while loop >= 97:
         a, start = 0, 0
     else:
         start, a = 32, 64
-    print(chr(((loop + start) - a)), end="")
+    print("{}".format((chr(((loop + start) - a)))), end="")
     loop -= 1
