@@ -3,7 +3,7 @@
     print alphabets in reverse interchanging case
 """
 
-start, a, loop = 0, 0,122
+start, a, loop = 0, 0, 122
 
 while loop >= 97:
     if loop % 2 == 0:
