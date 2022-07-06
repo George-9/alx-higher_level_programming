@@ -3,7 +3,7 @@
 import json
 
 """
-    module for writing json obj to a text file 
+    module for writing json obj to a text file
 """
 
 
