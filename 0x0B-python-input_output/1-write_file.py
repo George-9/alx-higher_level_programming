@@ -12,4 +12,5 @@ def write_file(filename="", text=""):
         text - the content to write to the file
     """
     with open(filename, 'w+') as file:
-        file.write(text)
+        count = file.write(text)
+        return count
