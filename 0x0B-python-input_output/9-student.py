@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 
 """
-    a module for a Student class 
+    a module for a Student class
 """
+
+
 class Student(dict):
     """
         Attributes:
@@ -17,7 +19,6 @@ class Student(dict):
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
-
 
     def to_json(self):
         """
