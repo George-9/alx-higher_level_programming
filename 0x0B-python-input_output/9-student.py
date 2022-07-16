@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 
-import json
-
 """
     a module for a Student class
 """
@@ -27,4 +25,5 @@ class Student(dict):
             a method that returns a json representation of
             the student object
         """
-        return json.loads(self)
+        f_name, l_name = self.first_name, self.last_name
+        return '{"first_name": f_name, "last_name": l_name, "age": self.age}'
