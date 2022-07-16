@@ -26,4 +26,4 @@ class Student(dict):
             the student object
         """
         f_name, l_name = self.first_name, self.last_name
-        return '{"first_name": f_name, "last_name": l_name, "age": self.age}'
+        return {"first_name": f_name, "last_name": l_name, "age": self.age}
