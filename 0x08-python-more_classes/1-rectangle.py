@@ -42,7 +42,7 @@ class Rectangle:
         """
         return self._Rectangle__height
 
-    @width.setter
+    @height.setter
     def height(self, value):
         """
             sets the height of the rectangle
