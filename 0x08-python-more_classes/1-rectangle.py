@@ -6,9 +6,13 @@
 
 class Rectangle:
     """
-        Attributes:
+        A rectangle object class
+        Attributes: none
     """
     def __init__(self, width=0, height=0):
+        """
+            instantiate the rectangle object
+        """
         self._Rectangle__height = height
         self._Rectangle__width = width
 
