@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
-    a class Rectangle that defines a rectangle by: (based on 6-rectangle.py)
+    This module defines a rectanlge class
+
+    It also includes methods for the rectangle
 """
 
 
@@ -54,18 +56,6 @@ class Rectangle:
             return 0
         return (self._Rectangle__width * 2) + (self._Rectangle__height * 2)
 
-    def __str__(self):
-        if self._Rectangle__width == 0 or self._Rectangle__height == 0:
-            return ''
-        rect = ''
-        cont = ''
-        for i in range(self._Rectangle__height):
-            rect += (f"{self.print_symbol}" * self._Rectangle__width)
-            rect += '\n'
-        for a in range(len(rect) - 1):
-            cont += rect[a]
-        return cont
-
     @property
     def print_symbol(self):
         return self.symbol
@@ -78,6 +68,18 @@ class Rectangle:
         w, h = self._Rectangle__width, self._Rectangle__height
         return f'Rectangle({w}, {h})'
 
+    def __str__(self):
+        if self._Rectangle__width == 0 or self._Rectangle__height == 0:
+            return ''
+        rect = ''
+        cont = ''
+        for i in range(self._Rectangle__height):
+            rect += (str(self.print_symbol) * self._Rectangle__width)
+            rect += '\n'
+        for a in range(len(rect) - 1):
+            cont += rect[a]
+        return cont
+    
     def __del__(self):
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
