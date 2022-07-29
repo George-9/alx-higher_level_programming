@@ -17,10 +17,20 @@ class Rectangle:
 
     @property
     def width(self):
+        """
+           pass
+           pass
+           pass
+        """
         return self._Rectangle__width
 
     @width.setter
     def width(self, value):
+        """
+           pass
+           pass
+           pass
+        """
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if (self._Rectangle__width < 0):
@@ -29,10 +39,20 @@ class Rectangle:
 
     @property
     def height(self):
+        """
+           pass
+           pass
+           pass
+        """
         return self._Rectangle__height
 
     @height.setter
     def height(self, value):
+        """
+           pass
+           pass
+           pass
+        """
         if type(value) is not int:
             raise TypeError("height must be an integer")
         if (self._Rectangle__height < 0):
@@ -40,9 +60,19 @@ class Rectangle:
         self._Rectangle__height = value
 
     def area(self):
+        """
+           pass
+           pass
+           pass
+        """
         return self._Rectangle__width * self._Rectangle__height
 
     def perimeter(self):
+        """
+           pass
+           pass
+           pass
+        """
         if self._Rectangle__width == 0 or self._Rectangle__height == 0:
             return 0
         return (self._Rectangle__width * 2) + (self._Rectangle__height * 2)
