@@ -79,7 +79,7 @@ class Rectangle:
         for a in range(len(rect) - 1):
             cont += rect[a]
         return cont
-    
+
     def __del__(self):
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
