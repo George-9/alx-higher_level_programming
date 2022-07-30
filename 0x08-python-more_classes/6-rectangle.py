@@ -5,11 +5,12 @@
 
 
 class Rectangle:
-    number_of_instances = 0
     """
         Attributes:
             number_of_instances (int): count number of class instances
     """
+    number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         Rectangle.number_of_instances += 1
         self._Rectangle__height = height
@@ -18,18 +19,14 @@ class Rectangle:
     @property
     def width(self):
         """
-           pass
-           pass
-           pass
+           returns the width of the rectangle
         """
         return self._Rectangle__width
 
     @width.setter
     def width(self, value):
         """
-           pass
-           pass
-           pass
+           sets the width of the rectangle
         """
         if type(value) is not int:
             raise TypeError("width must be an integer")
@@ -40,18 +37,14 @@ class Rectangle:
     @property
     def height(self):
         """
-           pass
-           pass
-           pass
+           returns the height of the rectangle
         """
         return self._Rectangle__height
 
     @height.setter
     def height(self, value):
         """
-           pass
-           pass
-           pass
+           sets the height of the Rcanlge object
         """
         if type(value) is not int:
             raise TypeError("height must be an integer")
@@ -61,17 +54,13 @@ class Rectangle:
 
     def area(self):
         """
-           pass
-           pass
-           pass
+           returns the area of the Rectangle
         """
         return self._Rectangle__width * self._Rectangle__height
 
     def perimeter(self):
         """
-           pass
-           pass
-           pass
+           returns the perimeter of the Rectangle object
         """
         if self._Rectangle__width == 0 or self._Rectangle__height == 0:
             return 0
