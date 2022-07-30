@@ -114,7 +114,6 @@ class Rectangle:
         else:
             return rect_1
 
-
     def __repr__(self):
         w, h = self._Rectangle__width, self._Rectangle__height
         return f'Rectangle({w}, {h})'
